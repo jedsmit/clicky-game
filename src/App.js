@@ -1,26 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar';
+import Title from './components/Title';
+import GameDiv from './components/GameDiv';
+import images from './assets/images/goats.json';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Title />
+      <GameDiv />
+      <img className="img img-thumbnail" src={require(images[0].image + ".jpg")} alt={images[0].name}></img>
     </div>
   );
 }
-
 export default App;
