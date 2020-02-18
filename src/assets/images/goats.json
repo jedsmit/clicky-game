@@ -8,5 +8,55 @@
         "id": 2,
         "name": "Goat_2",
         "image": "./assets/images/Goat_2"
+    },
+    {
+        "id": 3,
+        "name": "Goat_3",
+        "image": "./assets/images/Goat_3"
+    },
+    {
+        "id": 4,
+        "name": "Goat_4",
+        "image": "./assets/images/Goat_4"
+    },
+    {
+        "id": 5,
+        "name": "Goat_5",
+        "image": "./assets/images/Goat_5"
+    },
+    {
+        "id": 6,
+        "name": "Goat_6",
+        "image": "./assets/images/Goat_6"
+    },
+    {
+        "id": 7,
+        "name": "Goat_7",
+        "image": "./assets/images/Goat_7"
+    },
+    {
+        "id": 8,
+        "name": "Goat_8",
+        "image": "./assets/images/Goat_8"
+    },
+    {
+        "id": 9,
+        "name": "Goat_9",
+        "image": "./assets/images/Goat_9"
+    },
+    {
+        "id": 10,
+        "name": "Goat_10",
+        "image": "./assets/images/Goat_10"
+    },
+    {
+        "id": 11,
+        "name": "Goat_11",
+        "image": "./assets/images/Goat_11"
+    },
+    {
+        "id": 12,
+        "name": "Goat_12",
+        "image": "./assets/images/Goat_12"
     }
 ]

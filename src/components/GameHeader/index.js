@@ -1,6 +1,6 @@
 import React from "react";
 
-function GameDiv() {
+function GameHeader() {
     return (
         <div className="container-fluid">
             <h1 className="display-4">Hey Asshole!</h1>
@@ -8,4 +8,4 @@ function GameDiv() {
     )
 };
 
-export default GameDiv;
+export default GameHeader;
