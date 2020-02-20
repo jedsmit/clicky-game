@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import "./App.css"
 import Navbar from './components/Navbar';
 import Title from './components/Title';
-import GameHeader from './components/GameHeader';
-// import Card from './components/Card';
+import Card from './components/Card';
 import images from './assets/images/goats.json';
 
 
@@ -11,13 +10,48 @@ class App extends Component {
 
   state = {
     images,
-    goatsClicked: []
+    goatsClicked: [],
+    score: 0,
+    topScore: 0,
+    message: "Click on a goat to begin!"
   }
 
   //apply shuffle function to image array
   shuffleGoats = () => {
     this.setState({ images: this.shuffle(images) })
-  }
+  };
+
+  //increments the score by setting the score state to the length of the goats clicked array, then updates the top score if needed 
+  incrementScore = () => {
+    let newScore = this.state.goatsClicked.length;
+    console.log("newScore: " + newScore);
+    this.setState({ score: newScore });
+    console.log("score: " + this.state.score)
+    if (this.state.topScore < this.state.score) {
+      this.setState({ topScore: this.state.score })
+    };
+  };
+
+  // handles clicks, calls score and shuffle functions
+  clickHandler = (event) => {
+    this.setState({ message: "Click a goat to begin!" })
+    let goat = event.target.id;
+    //check to see if the goat has already been clicked, if not adds to clickedGoats array and increments score
+    if (this.state.goatsClicked.includes(goat)) {
+      this.setState({ goatsClicked: [], score: 0, message: "You already picked that goat. Start over." });
+    } else {
+      let goatsClicked = this.state.goatsClicked;
+      goatsClicked.push(goat);
+      this.setState({ goatsClicked: goatsClicked })
+      console.log(this.state.goatsClicked);
+      this.incrementScore();
+    };
+    //checks for winner by comparing score to clickedGoats array length
+    if (this.state.score === this.state.images.length) {
+      this.setState({ message: "You got them all! Click a goat to play again!" });
+    };
+    this.shuffleGoats();
+  };
 
   //function to shuffle the image array
   shuffle = (arr) => {
@@ -34,17 +68,15 @@ class App extends Component {
   render() {
     return (
       <div className="App" >
-        <Navbar />
+        <Navbar message={this.state.message} score={this.state.score} topScore={this.state.topScore} />
         <Title />
-        <GameHeader />
-        {/* <Card /> */}
-        <div>{
-          images.map((goat) => {
-            return (<img onClick={this.shuffleGoats} key={goat.id} className="img img-thumbnail" src={require(goat.image + ".jpg")} alt={goat.name}></img>)
+        {
+          this.state.images.map(goat => {
+            return <Card key={goat.id} id={goat.id} className={"img img-thumbnail"} src={require(goat.image + ".jpg")} alt={goat.name} onClick={this.clickHandler} />
           })
         }
-        </div>
-      </div>
+
+      </div >
     );
   };
 }

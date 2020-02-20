@@ -1,23 +1,25 @@
-import React from "react";
+import React, { Component } from "react";
 import Score from "../Score";
 
-function Navbar() {
-    return <nav className="navbar sticky-top navbar-light bg-light">
+class Navbar extends Component {
 
-        <div className="col-sm-4">
-            <a className="navbar-brand" href="/">GoatyGoatyGoatGoat</a>
-        </div>
+    render() {
+        return (<nav className="navbar sticky-top navbar-light bg-light" >
 
-        <div className="col-sm-4">
-            <h4>Click a goat to begin!</h4>
-        </div>
+            <div className="col-sm-4">
+                <a className="navbar-brand" href="/">GoatyGoatyGoatGoat</a>
+            </div>
 
-        <div className="col-sm-4">
-            <Score />
-        </div>
+            <div className="col-sm-4">
+                <h5>{this.props.message}</h5>
+            </div>
 
-    </nav >
+            <div className="col-sm-4">
+                <Score score={this.props.score} topScore={this.props.topScore} />
+            </div>
 
+        </nav >)
+    };
 };
 
 export default Navbar;
