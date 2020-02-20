@@ -16,6 +16,8 @@ class App extends Component {
     message: "Click on a goat to begin!"
   }
 
+  //==============functions==================
+
   //apply shuffle function to image array
   shuffleGoats = () => {
     this.setState({ images: this.shuffle(images) })
@@ -65,6 +67,8 @@ class App extends Component {
     return arr;
   }
 
+  //==================render components=================
+
   render() {
     return (
       <div className="App" >
@@ -72,7 +76,7 @@ class App extends Component {
         <Title />
         {
           this.state.images.map(goat => {
-            return <Card key={goat.id} id={goat.id} className={"img img-thumbnail"} src={require(goat.image + ".jpg")} alt={goat.name} onClick={this.clickHandler} />
+            return <Card key={goat.id} id={goat.id} className={"img img-thumbnail hvr-grow-shadow"} src={require(goat.image + ".jpg")} alt={goat.name} onClick={this.clickHandler} />
           })
         }
 
