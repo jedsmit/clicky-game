@@ -7,7 +7,7 @@ class Navbar extends Component {
         return (<nav className="navbar sticky-top navbar-light bg-light" >
 
             <div className="col-sm-4">
-                <a className="navbar-brand" href="/">GoatyGoatyGoatGoat</a>
+                <a className="navbar-brand" href="/">GoatyGoatyGoatClick</a>
             </div>
 
             <div className="col-sm-4">

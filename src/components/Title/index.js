@@ -5,8 +5,9 @@ function Title() {
     return (
         <div className="jumbotron jumbotron-fluid">
             <div className="container-fluid">
-                <h1 className="display-4">GoatyGoatyGoatGoat</h1>
-                <p className="lead">A Memory Game</p>
+                <h1 className="display-4">GoatyGoatyGoatClick</h1>
+                <p>A Memory Game</p>
+                <p>Click all twelve goats without clicking the same one twice.</p>
             </div>
         </div>)
 };

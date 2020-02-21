@@ -44,7 +44,7 @@ class App extends Component {
     } else {
       let goatsClicked = this.state.goatsClicked;
       goatsClicked.push(goat);
-      this.setState({ goatsClicked: goatsClicked })
+      this.setState({ goatsClicked: goatsClicked, message: "Keep Clicking!" })
       console.log(this.state.goatsClicked);
       this.incrementScore();
     };
