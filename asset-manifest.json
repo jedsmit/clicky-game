@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/clicky-game/static/css/main.5816a7a9.chunk.css",
+    "main.js": "/clicky-game/static/js/main.7b0187c4.chunk.js",
+    "main.js.map": "/clicky-game/static/js/main.7b0187c4.chunk.js.map",
+    "runtime-main.js": "/clicky-game/static/js/runtime-main.24c47d54.js",
+    "runtime-main.js.map": "/clicky-game/static/js/runtime-main.24c47d54.js.map",
+    "static/css/2.47e06e2e.chunk.css": "/clicky-game/static/css/2.47e06e2e.chunk.css",
+    "static/js/2.18fef60e.chunk.js": "/clicky-game/static/js/2.18fef60e.chunk.js",
+    "static/js/2.18fef60e.chunk.js.map": "/clicky-game/static/js/2.18fef60e.chunk.js.map",
+    "index.html": "/clicky-game/index.html",
+    "precache-manifest.bbcbf71b4b78f3b498b9c003b23257df.js": "/clicky-game/precache-manifest.bbcbf71b4b78f3b498b9c003b23257df.js",
+    "service-worker.js": "/clicky-game/service-worker.js",
+    "static/css/2.47e06e2e.chunk.css.map": "/clicky-game/static/css/2.47e06e2e.chunk.css.map",
+    "static/css/main.5816a7a9.chunk.css.map": "/clicky-game/static/css/main.5816a7a9.chunk.css.map",
+    "static/js/2.18fef60e.chunk.js.LICENSE.txt": "/clicky-game/static/js/2.18fef60e.chunk.js.LICENSE.txt",
+    "static/media/Goat_1.jpg": "/clicky-game/static/media/Goat_1.fe94ca62.jpg",
+    "static/media/Goat_10.jpg": "/clicky-game/static/media/Goat_10.318e6f66.jpg",
+    "static/media/Goat_11.jpg": "/clicky-game/static/media/Goat_11.069468d3.jpg",
+    "static/media/Goat_12.jpg": "/clicky-game/static/media/Goat_12.136c8d29.jpg",
+    "static/media/Goat_2.jpg": "/clicky-game/static/media/Goat_2.13980ba6.jpg",
+    "static/media/Goat_3.jpg": "/clicky-game/static/media/Goat_3.15cbaf19.jpg",
+    "static/media/Goat_4.jpg": "/clicky-game/static/media/Goat_4.216823c5.jpg",
+    "static/media/Goat_5.jpg": "/clicky-game/static/media/Goat_5.5993f2a3.jpg",
+    "static/media/Goat_6.jpg": "/clicky-game/static/media/Goat_6.98e1a03d.jpg",
+    "static/media/Goat_7.jpg": "/clicky-game/static/media/Goat_7.62068714.jpg",
+    "static/media/Goat_8.jpg": "/clicky-game/static/media/Goat_8.84f5656d.jpg",
+    "static/media/Goat_9.jpg": "/clicky-game/static/media/Goat_9.0b70d6db.jpg",
+    "static/media/index.css": "/clicky-game/static/media/grass.d479264d.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.24c47d54.js",
+    "static/css/2.47e06e2e.chunk.css",
+    "static/js/2.18fef60e.chunk.js",
+    "static/css/main.5816a7a9.chunk.css",
+    "static/js/main.7b0187c4.chunk.js"
+  ]
+}
