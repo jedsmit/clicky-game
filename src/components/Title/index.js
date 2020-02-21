@@ -3,7 +3,7 @@ import "../Title/index.css"
 
 function Title() {
     return (
-        <div className="jumbotron jumbotron-fluid">
+        <div class="jumbotron">
             <div className="container-fluid">
                 <h1 className="display-4">GoatyGoatyGoatClick</h1>
                 <p>A Memory Game</p>
